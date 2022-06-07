@@ -5,11 +5,13 @@ import { SiteRoutingModule } from './site-routing.module';
 import { HeaderComponent } from './layout/partials/header/header.component';
 import { FooterComponent } from './layout/partials/footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { SiteComponent } from './site.component';
 
 
 
 @NgModule({
   declarations: [
+    SiteComponent,
     LayoutComponent,
     HeaderComponent,
     FooterComponent,
