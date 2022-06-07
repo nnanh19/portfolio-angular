@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  @ViewChild("menu") menu? : any
+
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+ 
+  showMenu(){
+    this.menu.nativeElement.classList.toggle('invisible')
+    console.log(1);
+  }
+  hideMenu(){
+    this.menu.nativeElement.classList.toggle('invisible')
+    console.log(1);
   }
 
 }

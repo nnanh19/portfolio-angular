@@ -19,7 +19,7 @@ import { SiteComponent } from './site.component';
   ],
   imports: [
     CommonModule,
-    SiteRoutingModule
+    SiteRoutingModule,
   ]
 })
 export class SiteModule { }
