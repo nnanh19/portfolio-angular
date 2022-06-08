@@ -7,3 +7,28 @@
     @apply
     text-white md:text-black hover:text-red-500 transition duration-300 ease-in
 }
+
+.c-link-home {
+    @apply
+    px-6 
+    py-2.5 
+    mb-2 
+    text-white 
+    font-medium 
+    text-xs 
+    leading-tight 
+    uppercase 
+    rounded 
+    shadow-md 
+    hover:shadow-lg 
+    focus:shadow-lg 
+    focus:outline-none 
+    focus:ring-0 
+    active:shadow-lg 
+    transition 
+    duration-150 
+    ease-in-out 
+    flex 
+    items-center 
+    bg-red-400
+}
