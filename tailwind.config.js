@@ -9,7 +9,13 @@ module.exports = {
      },
      spacing : {
        '150' : '500px'
-     }
+     },
+     colors: {
+       bghome : '#EDF7FA'
+     },
+     spacing: {
+      '500': '50rem',
+    }
     },
   },
   plugins: [],
