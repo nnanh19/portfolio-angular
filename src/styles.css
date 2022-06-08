@@ -32,3 +32,18 @@
     items-center 
     bg-red-400
 }
+.project-link{
+    @apply
+    bg-transparent 
+    hover:bg-red-500 
+    text-white 
+    font-semibold 
+    hover:text-white 
+    px-4 
+    text-sm
+    border 
+    border-white 
+    hover:border-transparent
+    rounded
+    md:py-2
+}
