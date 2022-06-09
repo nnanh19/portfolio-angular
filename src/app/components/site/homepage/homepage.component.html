@@ -20,162 +20,96 @@
   </div>
 </div>
 
+<!-- edu -->
+<div class="container mx-auto px-3 md:px-24">
+  <hr>
+  <div class="text-center my-3 md:text-left md:my-5">
+    <h3 class="leading-10 text-sm md:text-xl">Education</h3>
+  </div>
+  <div class="flex flex-col">
+      <div class="flex flex-col justify-between items-start mb-5 md:flex-row md:gap-5">
+          <div class="flex flex-col gap-5">
+            <div>
+              <h3 class="font-bold text-xl md:text-3xl md:font-sans"> Cao đẳng FPT </h3>
+              <span class="text-gray-400 font-bold" >Bằng khá</span>
+            </div>
+            <div>
+              <p class="text-gray-400 font-semibold">Thiết kế & lập trình website</p>
+              <p class="text-gray-400 font-semibold">Điểm trung bình 7.5</p>
+            </div>
+          </div>
+          <span class="text-gray-400 font-bold">20-12-2020 - 2023</span>
+      </div>
+  </div>
+</div>
 
 <!-- RECENT WORKS -->
-<div class="bg-bghome flex text-center py-5  md:text-left">
+<div class="flex text-center  md:text-left">
   <div class="container mx-auto px-3  md:px-24 ">
-    <div class="flex justify-between pb-5">
+    <hr>
+    <div class="flex justify-between py-5 pb-5">
       <h3 class="text-sm md:text-xl ">Recent works</h3>
-      <a href="#"> View more </a>
+      
     </div>
-    <div class="flex flex-col gap-3 md:flex-row md:gap-5 md:justify-start">
-      <div class="relative">
+    <div  class="grid grid-rown gap-3 md:grid-cols-3 md:gap-x-3">
+      <div *ngFor="let work of listWork" class="relative group">
         <div class="relative">
           <img
-            class="w-fit rounded-lg"
-            src="https://hueblogger.com/wp-content/uploads/2019/11/vector-cay-hoa-anh-dao.png"
+            class="rounded-lg"
+            src={{work.img}}
             alt=""
           />
         </div>
+
+        <div class="absolute z-20 top-0 group-hover:hidden">
+          <p
+            class="bg-red-500 h-8  text-white text-center p-1 font-heebo rounded-tl-lg rounded-br-lg"
+          >
+            {{work.name}}
+          </p>
+        </div>
+
         <div
           class="rounded-lg z-20 bg-slate-500 opacity-0 min-w-full min-h-full absolute top-0 px-5    hover:opacity-90 flex flex-col justify-between text-center group"
         >
           <p
             class="bg-red-500 h-0 text-red-500 text-center rounded-b-xl p-1 font-heebo group-hover:h-8 group-hover:text-white duration-500"
           >
-            React1, Redux-toolkit, API
+            {{work.frameworks}}
           </p>
+          
           <div class="mb-3 flex flex-col gap-3">
-            <p
-              class="project-link opacity-0 transform group-hover:opacity-90 duration-100 ease-in"
-            >
-              <a href="">Github </a>
-            </p>
-            <p
-              class="project-link opacity-0 transform group-hover:opacity-90 duration-1000 ease-in"
-            >
-              <a href="">View on Website</a>
-            </p>
+            <a class="project-link 
+              cursor-pointer 
+              opacity-0 
+              transform 
+              group-hover:opacity-90 
+              duration-100 ease-in" 
+              href={{work.link_git}}
+            >Github</a>
+            <a class="project-link 
+              cursor-pointer 
+              opacity-0 
+              transform 
+              group-hover:opacity-90 
+              duration-100 ease-in" 
+              href={{work.link_web}}
+            >View on Website</a>
           </div>
         </div>
       </div>
-      <div class="relative">
-        <div class="relative">
-          <img
-            class="w-fit rounded-lg"
-            src="https://hueblogger.com/wp-content/uploads/2019/11/vector-cay-hoa-anh-dao.png"
-            alt=""
-          />
-        </div>
-        <div
-          class="rounded-lg z-20 bg-slate-500 opacity-0 min-w-full min-h-full absolute top-0 px-5 hover:opacity-90 flex flex-col justify-between text-center group"
-        >
-          <p
-            class="bg-red-500 h-0 text-red-500 text-center rounded-b-xl p-1 font-heebo group-hover:h-8 group-hover:text-white duration-500"
-          >
-            React1, Redux-toolkit, API
-          </p>
-          <div class="mb-3 flex flex-col gap-3">
-            <p
-              class="project-link opacity-0 transform group-hover:opacity-90 duration-100 ease-in"
-            >
-              <a href="">Github </a>
-            </p>
-            <p
-              class="project-link opacity-0 transform group-hover:opacity-90 duration-1000 ease-in"
-            >
-              <a href="">View on Website</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="relative">
-        <div class="relative">
-          <img
-            class="w-fit rounded-lg"
-            src="https://hueblogger.com/wp-content/uploads/2019/11/vector-cay-hoa-anh-dao.png"
-            alt=""
-          />
-        </div>
-        <div
-          class="rounded-lg z-20 bg-slate-500 opacity-0 min-w-full min-h-full absolute top-0 px-5 hover:opacity-90 flex flex-col justify-between text-center group"
-        >
-          <p
-            class="bg-red-500 h-0 text-red-500 text-center rounded-b-xl p-1 font-heebo group-hover:h-8 group-hover:text-white duration-500"
-          >
-            React1, Redux-toolkit, API
-          </p>
-          <div class="mb-3 flex flex-col gap-3">
-            <p
-              class="project-link opacity-0 transform group-hover:opacity-90 duration-100 ease-in"
-            >
-              <a href="">Github </a>
-            </p>
-            <p
-              class="project-link opacity-0 transform group-hover:opacity-90 duration-1000 ease-in"
-            >
-              <a href="">View on Website</a>
-            </p>
-          </div>
-        </div>
-      </div>
+    </div>
+    <div class="text-center flex justify-center py-5">
+      <p *ngIf="!viewLess"  class="cursor-pointer load-link  " (click)="getAllListWork()"> View all </p>
+      <p *ngIf="viewLess"  class="cursor-pointer load-link " (click)="getLessListWork()"> View less </p>
     </div>
   </div>
 </div>
+<hr>
 
-<!-- Featured works -->
+<!-- Expearient -->
 
-<div class="container mx-auto px-3 md:px-24">
-  <div class="text-center my-3 md:text-left md:my-5">
-    <h3 class="leading-10 text-sm md:text-xl">Featured works</h3>
-  </div>
-  <div class="flex flex-col">
-      <div class="flex flex-col md:flex-row md:gap-5">
-          <div class="">
-            <a href=""><img class="max-w-sm rounded-lg" src="https://th.bing.com/th/id/R.18a22bd05d7f65941eb710452bb843e2?rik=pZ8Vc16Vp0dDnw&riu=http%3a%2f%2fdanangsuntravel.com%2fdata%2ftour%2f500%2fmua-hoa-anh-dao-1577072105.jpg&ehk=ZVGRMY4evmS7G%2fUz9J5PyJ6cY9Nw3xkcbSy4lfCRQAg%3d&risl=&pid=ImgRaw&r=0" alt=""></a>
-          </div>
-          <div class="flex flex-col gap-1  md:gap-3">
-              <a href=""><h3 class="font-bold text-xl md:text-2xl md:font-sans"> Real-time chat application </h3></a>
-            <div class="flex flex-row gap-5">
-                <span class="bg-gray-800 rounded-full px-3 md:px-5 text-white">2022</span>
-                <span class="text-gray-400">API</span>
-              </div>
-              <p>Website created targeted for people to be able to message directly, Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci ad et, consequatur accusamus, dolorum doloremque recusandae cupiditate beatae eius expedita voluptas fugiat provident laudantium quisquam facere nisi fuga dolorem?</p>
-          </div>
-      </div>
-      <hr class="my-5">
 
-      <div class="flex flex-col md:flex-row md:gap-5">
-        <div class="">
-            <a href=""><img class="max-w-sm rounded-lg" src="https://th.bing.com/th/id/R.18a22bd05d7f65941eb710452bb843e2?rik=pZ8Vc16Vp0dDnw&riu=http%3a%2f%2fdanangsuntravel.com%2fdata%2ftour%2f500%2fmua-hoa-anh-dao-1577072105.jpg&ehk=ZVGRMY4evmS7G%2fUz9J5PyJ6cY9Nw3xkcbSy4lfCRQAg%3d&risl=&pid=ImgRaw&r=0" alt=""></a>
-        </div>
-        <div class="flex flex-col gap-1  md:gap-3">
-            <h3 class="font-bold text-xl md:text-2xl md:font-sans"> Real-time chat application </h3>
-            <div class="flex flex-row gap-5">
-              <span class="bg-gray-800 rounded-full px-3 md:px-5 text-white">2022</span>
-              <span class="text-gray-400">API</span>
-            </div>
-            <p>Website created targeted for people to be able to message directly, Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci ad et, consequatur accusamus, dolorum doloremque recusandae cupiditate beatae eius expedita voluptas fugiat provident laudantium quisquam facere nisi fuga dolorem?</p>
-        </div>
-    </div>
-    <hr class="my-5">
-    <div class="flex flex-col md:flex-row md:gap-5">
-        <div class="">
-            <a href=""><img class="max-w-sm rounded-lg" src="https://th.bing.com/th/id/R.18a22bd05d7f65941eb710452bb843e2?rik=pZ8Vc16Vp0dDnw&riu=http%3a%2f%2fdanangsuntravel.com%2fdata%2ftour%2f500%2fmua-hoa-anh-dao-1577072105.jpg&ehk=ZVGRMY4evmS7G%2fUz9J5PyJ6cY9Nw3xkcbSy4lfCRQAg%3d&risl=&pid=ImgRaw&r=0" alt=""></a>
-        </div>
-        <div class="flex flex-col gap-1  md:gap-3">
-            <h3 class="font-bold text-xl md:text-2xl md:font-sans"> Real-time chat application </h3>
-            <div class="flex flex-row gap-5">
-              <span class="bg-gray-800 rounded-full px-3 md:px-5 text-white">2022</span>
-              <span class="text-gray-400">API</span>
-            </div>
-            <p class="text-sm">Website created targeted for people to be able to message directly, Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci ad et, consequatur accusamus, dolorum doloremque recusandae cupiditate beatae eius expedita voluptas fugiat provident laudantium quisquam facere nisi fuga dolorem?</p>
-        </div>
-    </div>
-    <hr class="my-5">
-    
-  </div>
-</div>
 
 
 <!--  -->
