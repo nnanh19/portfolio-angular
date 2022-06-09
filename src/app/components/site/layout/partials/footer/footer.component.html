@@ -1,7 +1,55 @@
-<div class="flex flex-row justify-center items-center gap-5 py-5">
-    <a href=""><img class="w-7"  src="https://th.bing.com/th/id/OIP.55DCXbXlKDgEBoZhKxpzLAHaHa?pid=ImgDet&rs=1" alt=""></a>
-    <a href=""><img class="w-7" src="https://cdn.freebiesupply.com/logos/large/2x/zalo-1-logo-png-transparent.png" alt=""></a>
-</div>
-<div class="flex justify-center py-5">
-    <p>Thank you!</p>
+<div class="container mx-auto px-3 md:px-24 md:py-5 bg-bghome">
+    <div class="text-center my-3 md:text-left md:my-5">
+        <h3 class="leading-10 text-sm md:text-xl">Contact</h3>
+    </div>
+    <div class="flex flex-col gap-5">
+        <div class="w-4xl">
+            <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+                <nz-form-item>
+                  <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="email">Your email </nz-form-label>
+                  <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="The input is not valid E-mail!">
+                    <input nz-input formControlName="email" id="email" class="form__contact-input"/>
+                  </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                  <nz-form-label
+                    [nzSm]="6"
+                    [nzXs]="24"
+                    nzFor="nickname"
+                    nzRequired
+                    nzTooltipTitle="What do you want other to call you"
+                  >
+                    <span>Your name</span>
+                  </nz-form-label>
+                  <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="Please input your nickname!">
+                    <input nz-input id="nickname" formControlName="nickname"  class="form__contact-input"/>
+                  </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                    <nz-form-label
+                      [nzSm]="6"
+                      [nzXs]="24"
+                      nzFor="subject"
+                      nzRequired
+                      nzTooltipTitle="subject"
+                    >
+                      <span>Subject</span>
+                    </nz-form-label>
+                    <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="I want ...!">
+                      <input nz-input id="subject" formControlName="subject" class="form__contact-input" />
+                    </nz-form-control>
+                  </nz-form-item>
+
+                <nz-form-item nz-row class="register-area">
+                  <nz-form-control [nzSpan]="14" [nzOffset]="6">
+                    <button nz-button nzType="primary" class="load-link">Send</button>
+                  </nz-form-control>
+                </nz-form-item>
+              </form>
+        </div>
+        <div class="flex flex-row justify-center items-center gap-5 py-5">
+            <a href=""><img class="w-7"  src="https://th.bing.com/th/id/OIP.55DCXbXlKDgEBoZhKxpzLAHaHa?pid=ImgDet&rs=1" alt=""></a>
+            <a href=""><img class="w-7" src="https://cdn.freebiesupply.com/logos/large/2x/zalo-1-logo-png-transparent.png" alt=""></a>
+        </div>
+    </div>
 </div>

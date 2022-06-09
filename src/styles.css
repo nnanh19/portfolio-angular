@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import "~ng-zorro-antd/ng-zorro-antd.min.css";
 
 .c-link {
     @apply
@@ -45,5 +45,38 @@
     border-white 
     hover:border-transparent
     rounded
+    md:py-2
+}
+
+.form__contact-input{
+    @apply
+    bg-transparent 
+    text-black 
+    font-semibold 
+    px-4 
+    text-sm
+    border 
+    border-red-500 
+    rounded
+    w-full
+    md:py-2
+}
+
+.load-link{
+    @apply
+    bg-transparent 
+    bg-red-500 
+    font-semibold 
+    hover:text-white 
+    p-1
+    text-sm
+    border 
+    border-white 
+    hover:border-transparent
+    rounded
+    text-white
+    w-24
+    md:p-2
+    md:w-32
     md:py-2
 }
