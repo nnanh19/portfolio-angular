@@ -5,6 +5,7 @@ const routes: Routes = [
   {
     path : '',
     loadChildren : () => import('./components/site/site.module').then( m => m.SiteModule),
+    
   }
 ];
 
