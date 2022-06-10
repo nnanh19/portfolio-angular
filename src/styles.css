@@ -51,7 +51,7 @@
 .form__contact-input{
     @apply
     bg-transparent 
-    text-black 
+    text-black   
     font-semibold 
     px-4 
     text-sm

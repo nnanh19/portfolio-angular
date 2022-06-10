@@ -1,0 +1,88 @@
+<nz-table #nzTable [nzData]="listOfDisplayData" nzTableLayout="fixed">
+  <thead>
+    <tr>
+      <th nzCustomFilter>
+        Title
+        <nz-filter-trigger
+          [(nzVisible)]="visible"
+          [nzActive]="searchValue.length > 0"
+          [nzDropdownMenu]="menu"
+        >
+          <i nz-icon nzType="search"></i>
+        </nz-filter-trigger>
+      </th>
+      <th>Image</th>
+      <th>Genre</th>
+      <th>Frameworks</th>
+      <th>Link git</th>
+      <th>Link web</th>
+      <th>Created at</th>
+      <th colSpan="2">Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of nzTable.data">
+      <td>{{ data.title }}</td>
+      <td><img src="{{ data.img }}" alt="" /></td>
+      <td>{{ data.genre }}</td>
+      <td>{{ data.frameworks }}</td>
+      <td>{{ data.link_git }}</td>
+      <td>{{ data.link_web }}</td>
+      <td>{{ data.createdAt }}</td>
+      <td>
+        <a
+          nzType="primary"
+          nzDanger
+          nz-button
+          nzType="default"
+          nzPrimary
+          routerLink="/admin/work/{{data.id}}"
+          >Sửa</a
+        >
+      </td>
+      <td>
+        <a
+          nz-button
+          nzType="primary"
+          nzDanger
+          nz-popconfirm
+          nzPopconfirmTitle="Bán chắn chắc xóa?"
+          (nzOnConfirm)="onDelete(data.id)"
+          (nzOnCancel)="cancel()"
+          nzPopconfirmPlacement="leftTop"
+          nzOkText="Đồng ý"
+          nzCancelText="Hủy"
+        >
+          Xóa
+        </a>
+      </td>
+      <td>
+        <a nz-button nzType="default" nzPrimary routerLink="/admin/work/detail"
+          >Chi tiết</a
+        >
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
+<nz-dropdown-menu #menu="nzDropdownMenu">
+  <div class="ant-table-filter-dropdown">
+    <div class="search-box">
+      <input
+        type="text"
+        nz-input
+        placeholder="Search name"
+        [(ngModel)]="searchValue"
+      />
+      <button
+        nz-button
+        nzSize="small"
+        nzType="primary"
+        (click)="search()"
+        class="search-button"
+      >
+        Search
+      </button>
+      <button nz-button nzSize="small" (click)="reset()">Reset</button>
+    </div>
+  </div>
+</nz-dropdown-menu>
