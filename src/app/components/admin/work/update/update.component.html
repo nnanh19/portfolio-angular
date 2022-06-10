@@ -1,0 +1,57 @@
+<div class="flex flex-col items-start">
+    <div>
+        <a nz-button  nzType="default" nzPrimary routerLink="/product">Danh sách</a>
+    </div>
+    <div class="">
+        <h1 class="font-bold">Thêm mới sản phẩm</h1>
+    </div>
+    <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+        <nz-form-item>
+            <nz-form-label [nzSpan]="5" nzRequired nzFor="title">Tên dự án</nz-form-label>
+            <nz-form-control [nzSpan]="12" nzErrorTip="Nhập tên dự án!">
+            <input id="title" type="text" nz-input formControlName="title" />
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSpan]="5" nzRequired nzFor="img">Ảnh</nz-form-label>
+            <nz-form-control [nzSpan]="12" nzErrorTip="Nhập ảnh dự án!">
+            <input id="img" type="text" nz-input formControlName="img" />
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSpan]="5" nzRequired nzFor="genre">Thể loại</nz-form-label>
+            <nz-form-control [nzSpan]="12" nzErrorTip="Nhập thể loại!">
+            <textarea id="genre" type="text" nz-input formControlName="genre"></textarea>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSpan]="5" nzRequired nzFor="frameworks">Frameworks</nz-form-label>
+            <nz-form-control [nzSpan]="12" nzErrorTip="Nhập frameworks!">
+            <input id="frameworks" type="text" nz-input formControlName="frameworks" />
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSpan]="5" nzRequired nzFor="link_git">Link git</nz-form-label>
+            <nz-form-control [nzSpan]="12" nzErrorTip="Nhập link git!">
+            <input id="link_git" type="text" nz-input formControlName="link_git" />
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSpan]="5" nzRequired nzFor="link_web">Link website</nz-form-label>
+            <nz-form-control [nzSpan]="12" nzErrorTip="Nhập link website!">
+            <input id="link_web" type="text" nz-input formControlName="link_web" />
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSpan]="5" nzRequired nzFor="createdAt">Thời gian</nz-form-label>
+            <nz-form-control [nzSpan]="12" nzErrorTip="Nhập thời gian!">
+            <input id="createdAt" type="text" nz-input formControlName="createdAt" />
+            </nz-form-control>
+        </nz-form-item>
+      <nz-form-item>
+        <nz-form-control [nzSpan]="12" [nzOffset]="5">
+          <button nz-button nzType="primary">Submit</button>
+        </nz-form-control>
+      </nz-form-item>
+    </form>
+</div>
