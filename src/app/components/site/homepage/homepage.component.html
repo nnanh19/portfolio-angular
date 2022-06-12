@@ -1,19 +1,27 @@
 <div
-  class="container mx-auto px-3 flex flex-col-reverse items-center text-center gap-5 md:flex-row md:text-left md:justify-between md:mt-28 md: mb-10 md:px-24 md:py-5"
+  class="tw-container
+    tw-mx-auto 
+    tw-px-3 
+    tw-flex 
+    tw-flex-col-reverse 
+    tw-items-center 
+    tw-text-center 
+    tw-gap-5 
+    md:tw-flex-row md:tw-text-left md:tw-justify-between md:tw-mt-28 md:tw-mb-10 md:tw-px-24 md:tw-py-5"
 >
-  <div class="flex flex-col items-center gap-5 md:items-start">
-    <h1 class="text-2xl font-bold md:text-4xl md:leading-10">
+  <div class="tw-flex tw-flex-col tw-items-center tw-gap-5 md:tw-items-start">
+    <h1 class="tw-text-2xl tw-font-bold md:tw-text-4xl md:tw-leading-10">
       Hi, I'm Nguyễn Nhật Anh, <br />
       Web Developer
     </h1>
-    <p class="flex flex-wrap text-xs leading-5 md:text-lg">
+    <p class="tw-flex tw-flex-wrap tw-text-xs tw-leading-5 md:tw-text-lg">
       Hello. I'm you, I'm 23 years old this year. Welcome to my information page
     </p>
     <button class="c-link-home">Download Info</button>
   </div>
-  <div class="w-1/5">
+  <div class="tw-w-1/5">
     <img
-      class="rounded-full"
+      class="tw-rounded-full"
       src="https://www.zhongguofeng.com/uploads/allimg/180525/13-1P525092241-50.png"
       alt=""
     />
@@ -21,86 +29,92 @@
 </div>
 
 <!-- edu -->
-<div class="container mx-auto px-3 md:px-24">
+<div class="tw-container tw-mx-auto tw-px-3 md:tw-px-24">
   <hr>
-  <div class="text-center my-3 md:text-left md:my-5">
-    <h3 class="leading-10 text-sm md:text-xl">Education</h3>
+  <div class="tw-text-center tw-my-3 md:tw-text-left md:tw-my-5">
+    <h3 class="tw-leading-10 tw-text-sm md:tw-text-xl">Education</h3>
   </div>
-  <div class="flex flex-col">
-      <div class="flex flex-col justify-between items-start mb-5 md:flex-row md:gap-5">
-          <div class="flex flex-col gap-5">
+  <div class="tw-flex tw-flex-col">
+      <div class="tw-flex tw-flex-col tw-justify-between tw-items-start tw-mb-5 md:tw-flex-row md:tw-gap-5">
+          <div class="tw-flex tw-flex-col tw-gap-5">
             <div>
-              <h3 class="font-bold text-xl md:text-3xl md:font-sans"> Cao đẳng FPT </h3>
-              <span class="text-gray-400 font-bold" >Bằng khá</span>
+              <h3 class="tw-font-bold tw-text-xl md:tw-text-3xl md:tw-font-sans"> Cao đẳng FPT </h3>
+              <span class="tw-text-gray-400 tw-font-bold" >Bằng khá</span>
             </div>
             <div>
-              <p class="text-gray-400 font-semibold">Thiết kế & lập trình website</p>
-              <p class="text-gray-400 font-semibold">Điểm trung bình 7.5</p>
+              <p class="tw-text-gray-400 tw-font-semibold">Thiết kế & lập trình website</p>
+              <p class="tw-text-gray-400 tw-font-semibold">Điểm trung bình 7.5</p>
             </div>
           </div>
-          <span class="text-gray-400 font-bold">20-12-2020 - 2023</span>
+          <span class="tw-text-gray-400 tw-font-bold">20-12-2020 - 2023</span>
       </div>
   </div>
 </div>
 
 <!-- RECENT WORKS -->
-<div class="flex text-center md:text-left">
-  <div class="container mx-auto px-3  md:px-24 ">
+<div class="tw-flex tw-text-center md:tw-text-left">
+  <div class="tw-container tw-mx-auto tw-px-3  md:tw-px-24 ">
     <hr>
-    <div class="flex justify-between py-5 pb-5">
-      <h3 class="text-sm md:text-xl ">Recent works</h3>
+    <div class="tw-flex tw-justify-between tw-py-5 tw-pb-5">
+      <h3 class="tw-text-sm md:tw-text-xl ">Recent works</h3>
     </div>
-    <div  class="grid grid-rown gap-3 md:grid-cols-3 md:gap-x-3">
-      <div *ngFor="let work of listWork" class="relative group">
-        <div class="relative">
+    <div  class="tw-grid tw-grid-rown tw-gap-3 md:tw-grid-cols-3 md:tw-gap-x-3">
+      <div *ngFor="let work of listWork" class="tw-relative tw-group">
+        <div class="tw-relative">
           <img
-            class="rounded-lg"
+            class="tw-rounded-lg"
             src={{work.img}}
             alt=""
           />
         </div>
 
-        <div class="absolute z-20 top-0 group-hover:hidden">
+        <div class="tw-absolute tw-z-20 tw-top-0 group-hover:tw-hidden">
           <p
-            class="bg-red-500 h-8  text-white text-center p-1 font-heebo rounded-tl-lg rounded-br-lg"
+            class="tw-bg-red-500 tw-h-8  tw-text-white tw-text-center tw-p-1 tw-font-heebo tw-rounded-tl-lg 
+              tw-rounded-br-lg"
           >
             {{work.genre}}
           </p>
         </div>
 
         <div
-          class="rounded-lg z-20 bg-slate-500 opacity-0 min-w-full min-h-full absolute top-0 px-5    hover:opacity-90 flex flex-col justify-between text-center group"
+          class="tw-rounded-lg tw-z-20 tw-bg-slate-500 tw-opacity-0 tw-min-w-full 
+              tw-min-h-full tw-absolute tw-top-0 tw-px-5 hover:tw-opacity-90 tw-flex tw-flex-col 
+              tw-justify-between tw-text-center tw-group"
         >
           <p
-            class="bg-red-500 h-0 text-red-500 text-center rounded-b-xl p-1 font-heebo group-hover:h-8 group-hover:text-white duration-500"
+            class="tw-bg-red-500 tw-h-0 tw-text-center tw-rounded-b-xl tw-p-1 
+              tw-font-heebo group-hover:tw-h-8 group-hover:tw-text-white tw-duration-500"
           >
             {{work.frameworks}}
           </p>
           
-          <div class="mb-3 flex flex-col gap-3">
-            <a class="project-link 
-              cursor-pointer 
-              opacity-0 
-              transform 
-              group-hover:opacity-90 
-              duration-100 ease-in" 
+          <div class="tw-mb-3 tw-flex tw-flex-col tw-gap-3">
+            <a class="
+              project-link 
+              tw-cursor-pointer 
+              tw-opacity-0 
+              tw-transform 
+              group-hover:tw-opacity-90 
+              tw-duration-100 tw-ease-in" 
               href={{work.link_git}}
             >Github</a>
-            <a class="project-link 
-              cursor-pointer 
-              opacity-0 
-              transform 
-              group-hover:opacity-90 
-              duration-100 ease-in" 
+            <a class="
+              project-link 
+              tw-cursor-pointer 
+              tw-opacity-0 
+              tw-transform 
+              group-hover:tw-opacity-90 
+              tw-duration-100 tw-ease-in" 
               href={{work.link_web}}
             >View on Website</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="text-center flex justify-center py-5">
-      <p *ngIf="!viewLess"  class="cursor-pointer load-link  " (click)="getAllListWork()"> View all </p>
-      <p *ngIf="viewLess"  class="cursor-pointer load-link " (click)="getLessListWork()"> View less </p>
+    <div class="tw-text-center tw-flex tw-justify-center tw-py-5">
+      <p *ngIf="!viewLess"  class="tw-cursor-pointer load-link  " (click)="getAllListWork()"> View all </p>
+      <p *ngIf="viewLess"  class="tw-cursor-pointer load-link " (click)="getLessListWork()"> View less </p>
     </div>
   </div>
 </div>
@@ -116,7 +130,7 @@
   <img
     src="https://img3.thuthuatphanmem.vn/uploads/2019/10/17/anh-ve-hoa-dao_102505733.png"
     alt="hoaanhdao.png"
-    class="w-32 origin-center rotate-90 invisible absolute left-5 top-0 md:visible"
+    class="tw-w-32 tw-origin-center tw-rotate-90 tw-invisible tw-absolute tw-left-5 tw-top-0 md:tw-visible"
   />
 </div>
 

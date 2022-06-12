@@ -1,42 +1,41 @@
-<div class="container mx-auto px-3 md:px-24 md:py-5 ">
+<div class="tw-container tw-mx-auto tw-px-3 md:tw-px-24 md:tw-py-5">
     <ul #menu  class="
-        z-30
-        invisible
-        fixed 
-        top-0
-        left-0
-        w-full 
-        h-screen 
-        flex 
-        flex-col 
-        justify-center 
-        items-center
-        bg-gray-800
-        bg-opacity-50
-        md:bg-transparent
-        md:h-auto
-        md:flex-row
-        md:justify-end
-        md:gap-5
-        md: font-bold   
-        md:static 
-        md:visible
+        tw-z-30
+        tw-invisible
+        tw-fixed 
+        tw-top-0
+        tw-left-0
+        tw-w-full 
+        tw-h-screen 
+        tw-flex 
+        tw-flex-row 
+        tw-justify-center 
+        tw-items-center
+        tw-bg-gray-800
+        tw-bg-opacity-50
+        md:tw-bg-transparent
+        md:tw-h-auto
+        md:tw-flex-row
+        md:tw-justify-end
+        md:tw-gap-5
+        md:tw-font-bold   
+        md:tw-static 
+        md:tw-visible
     "
     (click)="hideMenu()">
-        <li class="m-12 md:m-0"><a class="c-link" routerLink="/">Home</a></li>
-        <li class="m-12 md:m-0"><a class="c-link" routerLink="/work">Work</a></li>
-        <li class="m-12 md:m-0"><a class="c-link" routerLink="/blog">Blog</a></li>
-        <li class="m-12 md:m-0 md:hidden">
-            <a class="c-link " >
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <li class="tw-m-12 md:tw-m-0"><a class="c-link" routerLink="/">Home</a></li>
+        <li class="tw-m-12 md:tw-m-0"><a class="c-link" routerLink="/work">Work</a></li>
+        <li class="tw-m-12 md:tw-m-0"><a class="c-link" routerLink="/blog">Blog</a></li>
+        <li class="tw-m-12 md:tw-m-0 md:tw-hidden">
+            <a class="c-link" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="tw-h-5 tw-w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                 </svg>
             </a>
         </li>
     </ul>
-    
-    <a (click)="showMenu()" class="z-20 cursor-pointer p-3 md:hidden text-xl flex justify-end">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <a (click)="showMenu()" class="tw-z-20 tw-cursor-pointer tw-p-3 md:tw-hidden tw-text-xl tw-flex tw-justify-end">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="xw-5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
         </svg>
     </a>  
