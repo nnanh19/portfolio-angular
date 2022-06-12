@@ -2,23 +2,6 @@
   min-width: 600px;
 }
 input, textarea{
-min-width: 590px;
-}
-
-.ant-form-item-control-input{
+  min-width: 590px;
   border: 1px solid black !important;
-}
-.ng-tns-c74-0{
-  border: 1px black !important;
-}
-.ng-untouched {
-  border: 1px black !important;
-
-}
-.ng-pristine {
-  border: 1px black !important;
-
-}
-.ng-invalid{
-  border: 1px black !important;
 }

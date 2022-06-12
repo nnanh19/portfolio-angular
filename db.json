@@ -42,35 +42,16 @@
     },
     {
       "img": "https://th.bing.com/th/id/R.94ee5e77f6eab61bd97ed2a1155a7007?rik=Mb8ysf9bsfCZpg&pid=ImgRaw&r=0",
-      "title": "Trang bán hàng 5 ",
-      "genre": "Application, E-commerce",
-      "frameworks": "angular, tailwindcss, ant design",
+      "title": "Dự án new",
+      "genre": "API",
+      "frameworks": "React, redux-toolkit",
       "link_git": "https://github.com/nnanh19",
       "link_web": "https://github.com/nnanh19",
       "createdAt": "10-6-2022",
-      "id": 4
-    },
-    {
-      "img": "https://th.bing.com/th/id/R.94ee5e77f6eab61bd97ed2a1155a7007?rik=Mb8ysf9bsfCZpg&pid=ImgRaw&r=0",
-      "title": "Trang bán hàng 6 ",
-      "genre": "Application, E-commerce",
-      "frameworks": "angular, tailwindcss, ant design",
-      "link_git": "https://github.com/nnanh19",
-      "link_web": "https://github.com/nnanh19",
-      "createdAt": "10-6-2022",
-      "id": 5
+      "id": 123
     }
   ],
-  "work": [
-    {
-      "id": 1,
-      "workId": 1,
-      "img": "https://th.bing.com/th/id/R.94ee5e77f6eab61bd97ed2a1155a7007?rik=Mb8ysf9bsfCZpg&pid=ImgRaw&r=0",
-      "title": "Trang bán hàng",
-      "name": "Application, E-commerce",
-      "createdAt": "10-6-2022"
-    }
-  ],
+  "work": [],
   "comments": [
     {
       "id": 1,
