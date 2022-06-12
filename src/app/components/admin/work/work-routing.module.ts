@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { AdminWorkListComponent } from "./list/work-list.component";
+import { NewComponent } from "./new/new.component";
 import { AdminWorkUpdateComponent } from "./update/update.component";
 
 const routes : Routes = [
@@ -9,7 +10,11 @@ const routes : Routes = [
         component: AdminWorkListComponent
     },
     {
-        path: ':id',
+        path: 'new',
+        component: NewComponent
+    },
+    {
+        path: ':id/edit',
         component: AdminWorkUpdateComponent
     },
 ]

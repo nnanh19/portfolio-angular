@@ -8,7 +8,57 @@
       "link_git": "https://github.com/nnanh19",
       "link_web": "https://github.com/nnanh19",
       "createdAt": "10-6-2022",
-      "id": 1
+      "id": 122
+    },
+    {
+      "img": "https://th.bing.com/th/id/R.94ee5e77f6eab61bd97ed2a1155a7007?rik=Mb8ysf9bsfCZpg&pid=ImgRaw&r=0",
+      "title": "Trang bán hàng 2 ",
+      "genre": "Application, E-commerce",
+      "frameworks": "angular, tailwindcss, ant design",
+      "link_git": "https://github.com/nnanh19",
+      "link_web": "https://github.com/nnanh19",
+      "createdAt": "10-6-2022",
+      "id": 11
+    },
+    {
+      "img": "https://th.bing.com/th/id/R.94ee5e77f6eab61bd97ed2a1155a7007?rik=Mb8ysf9bsfCZpg&pid=ImgRaw&r=0",
+      "title": "Trang bán hàng 3 ",
+      "genre": "Application, E-commerce",
+      "frameworks": "angular, tailwindcss, ant design",
+      "link_git": "https://github.com/nnanh19",
+      "link_web": "https://github.com/nnanh19",
+      "createdAt": "10-6-2022",
+      "id": 15
+    },
+    {
+      "img": "https://th.bing.com/th/id/R.94ee5e77f6eab61bd97ed2a1155a7007?rik=Mb8ysf9bsfCZpg&pid=ImgRaw&r=0",
+      "title": "Trang bán hàng 4 ",
+      "genre": "Application, E-commerce",
+      "frameworks": "angular, tailwindcss, ant design",
+      "link_git": "https://github.com/nnanh19",
+      "link_web": "https://github.com/nnanh19",
+      "createdAt": "10-6-2022",
+      "id": 12
+    },
+    {
+      "img": "https://th.bing.com/th/id/R.94ee5e77f6eab61bd97ed2a1155a7007?rik=Mb8ysf9bsfCZpg&pid=ImgRaw&r=0",
+      "title": "Trang bán hàng 5 ",
+      "genre": "Application, E-commerce",
+      "frameworks": "angular, tailwindcss, ant design",
+      "link_git": "https://github.com/nnanh19",
+      "link_web": "https://github.com/nnanh19",
+      "createdAt": "10-6-2022",
+      "id": 4
+    },
+    {
+      "img": "https://th.bing.com/th/id/R.94ee5e77f6eab61bd97ed2a1155a7007?rik=Mb8ysf9bsfCZpg&pid=ImgRaw&r=0",
+      "title": "Trang bán hàng 6 ",
+      "genre": "Application, E-commerce",
+      "frameworks": "angular, tailwindcss, ant design",
+      "link_git": "https://github.com/nnanh19",
+      "link_web": "https://github.com/nnanh19",
+      "createdAt": "10-6-2022",
+      "id": 5
     }
   ],
   "work": [

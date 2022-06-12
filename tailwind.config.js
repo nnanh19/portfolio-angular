@@ -1,7 +1,6 @@
 module.exports = {
-  mode: 'jit',
-  darkMode: 'class', 
   purge: ['./src/**/*.{ts,html}'],
+  prefix: "tw-",
   theme: {
     extend: {
      fontFamily: {

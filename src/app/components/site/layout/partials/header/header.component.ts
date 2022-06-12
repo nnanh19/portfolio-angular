@@ -16,11 +16,11 @@ export class HeaderComponent implements OnInit {
   }
  
   showMenu(){
-    this.menu.nativeElement.classList.toggle('invisible')
+    this.menu.nativeElement.classList.toggle('tw-invisible')
     console.log(1);
   }
   hideMenu(){
-    this.menu.nativeElement.classList.toggle('invisible')
+    this.menu.nativeElement.classList.toggle('tw-invisible')
     console.log(1);
   }
 
