@@ -44,12 +44,12 @@ export class AdminWorkListComponent implements OnInit {
 
   onDelete(id: any){
     this.workService.remove(id).subscribe(() =>{
+      this.listOfDisplayData = this.listOfWorks.filter((item:any) => item.id !== id)
       this.notification.create(
         'success',
         'Xóa thành công',
         ''
       )
-      this.router.navigateByUrl('/admin/work')
     })
   }
 }
