@@ -3,49 +3,24 @@
         <h3 class="tw-leading-10 tw-text-sm tw-font-bold md:tw-text-xl">Works</h3>
     </div>
     <div class="tw-flex tw-flex-col">
-        <div class="tw-flex tw-flex-col md:tw-flex-row md:tw-gap-5">
-            <div class="">
-                <a href=""><img class="tw-w-full tw-rounded-lg" src="https://th.bing.com/th/id/R.18a22bd05d7f65941eb710452bb843e2?rik=pZ8Vc16Vp0dDnw&riu=http%3a%2f%2fdanangsuntravel.com%2fdata%2ftour%2f500%2fmua-hoa-anh-dao-1577072105.jpg&ehk=ZVGRMY4evmS7G%2fUz9J5PyJ6cY9Nw3xkcbSy4lfCRQAg%3d&risl=&pid=ImgRaw&r=0" alt=""></a>
-            </div>
-            <div class="tw-flex tw-flex-col tw-gap-1  md:tw-gap-3">
-                <a href=""><h3 class="tw-font-bold tw-text-xl md:tw-text-2xl md:tw-font-sans"> Real-time chat application </h3></a>
-                <div class="tw-flex tw-flex-row tw-gap-5">
-                    <span class="tw-bg-gray-800 tw-rounded-full tw-px-3 md:tw-px-5 tw-text-white">2022</span>
-                    <span class="tw-text-gray-400">API</span>
+        <div *ngFor="let work of listWorks | paginate: { itemsPerPage: 3, currentPage: page, totalItems: totalLength }">
+            <div class="tw-flex tw-flex-col md:tw-grid md:tw-grid-cols-4 md:tw-gap-5">
+                <div class="tw-col-span-1">
+                    <a routerLink="/work/{{work.id}}"><img class="tw-w-full tw-rounded-lg" src="https://th.bing.com/th/id/R.18a22bd05d7f65941eb710452bb843e2?rik=pZ8Vc16Vp0dDnw&riu=http%3a%2f%2fdanangsuntravel.com%2fdata%2ftour%2f500%2fmua-hoa-anh-dao-1577072105.jpg&ehk=ZVGRMY4evmS7G%2fUz9J5PyJ6cY9Nw3xkcbSy4lfCRQAg%3d&risl=&pid=ImgRaw&r=0" alt=""></a>
                 </div>
-                <p>Website created targeted for people to be able to message directly, Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci ad et, consequatur accusamus, dolorum doloremque recusandae cupiditate beatae eius expedita voluptas fugiat provident laudantium quisquam facere nisi fuga dolorem?</p>
-            </div>
-        </div>
-        <hr class="tw-my-5">
-    
-        <div class="tw-flex tw-flex-col md:tw-flex-row md:tw-gap-5">
-            <div class="">
-                <a href=""><img class="tw-w-full tw-rounded-lg" src="https://th.bing.com/th/id/R.18a22bd05d7f65941eb710452bb843e2?rik=pZ8Vc16Vp0dDnw&riu=http%3a%2f%2fdanangsuntravel.com%2fdata%2ftour%2f500%2fmua-hoa-anh-dao-1577072105.jpg&ehk=ZVGRMY4evmS7G%2fUz9J5PyJ6cY9Nw3xkcbSy4lfCRQAg%3d&risl=&pid=ImgRaw&r=0" alt=""></a>
-            </div>
-            <div class="tw-flex tw-flex-col tw-gap-1  md:tw-gap-3">
-                <h3 class="tw-font-bold tw-text-xl md:tw-text-2xl md:tw-font-sans"> Real-time chat application </h3>
-                <div class="tw-flex tw-flex-row tw-gap-5">
-                <span class="tw-bg-gray-800 tw-rounded-full tw-px-3 md:tw-px-5 tw-text-white">2022</span>
-                <span class="tw-text-gray-400">API</span>
+                <div class="tw-flex tw-flex-col tw-gap-1  md:tw-col-span-3 md:tw-gap-3">
+                    <a routerLink="/work/{{work.id}}"><h3 class="tw-font-bold tw-text-xl md:tw-text-2xl md:tw-font-sans"> {{work.title}} </h3></a>
+                    <div class="tw-flex tw-flex-row tw-gap-5">
+                        <span class="tw-bg-gray-800 tw-rounded-full tw-px-3 md:tw-px-5 tw-text-white">{{work.createdAt}}</span>
+                        <span class="tw-text-gray-400">{{work.frameworks}}</span>
+                    </div>
+                    <p>{{work.desc}}</p>
                 </div>
-                <p>Website created targeted for people to be able to message directly, Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci ad et, consequatur accusamus, dolorum doloremque recusandae cupiditate beatae eius expedita voluptas fugiat provident laudantium quisquam facere nisi fuga dolorem?</p>
             </div>
+            <hr class="tw-my-5">
         </div>
-        <hr class="tw-my-5">
-        <div class="tw-flex tw-flex-col md:tw-flex-row md:tw-gap-5">
-            <div class="">
-                <a href="/work/1"><img class="tw-w-full tw-rounded-lg" src="https://th.bing.com/th/id/R.18a22bd05d7f65941eb710452bb843e2?rik=pZ8Vc16Vp0dDnw&riu=http%3a%2f%2fdanangsuntravel.com%2fdata%2ftour%2f500%2fmua-hoa-anh-dao-1577072105.jpg&ehk=ZVGRMY4evmS7G%2fUz9J5PyJ6cY9Nw3xkcbSy4lfCRQAg%3d&risl=&pid=ImgRaw&r=0" alt=""></a>
-            </div>
-            <div class="tw-flex tw-flex-col tw-gap-1  md:tw-gap-3">
-                <h3 class="tw-font-bold tw-text-xl md:tw-text-2xl md:tw-font-sans"> Real-time chat application </h3>
-                <div class="tw-flex tw-flex-row tw-gap-5">
-                <span class="tw-bg-gray-800 tw-rounded-full tw-px-3 md:tw-px-5 tw-text-white">2022</span>
-                <span class="tw-text-gray-400">API</span>
-                </div>
-                <p class="tw-text-sm">Website created targeted for people to be able to message directly, Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci ad et, consequatur accusamus, dolorum doloremque recusandae cupiditate beatae eius expedita voluptas fugiat provident laudantium quisquam facere nisi fuga dolorem?</p>
-            </div>
+        <div class="tw-text-center" >
+            <pagination-controls class="my-pagination" (pageChange)="page = $event"></pagination-controls>
         </div>
-        <hr class="tw-my-5">
-        
     </div>
     </div>

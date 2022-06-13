@@ -2,7 +2,8 @@
   "works": [
     {
       "img": "https://th.bing.com/th/id/R.94ee5e77f6eab61bd97ed2a1155a7007?rik=Mb8ysf9bsfCZpg&pid=ImgRaw&r=0",
-      "title": "Trang bán hàng 1 update",
+      "title": "Trang bán hàng 1 update1",
+      "desc": "desc",
       "genre": "Application, E-commerce",
       "frameworks": "angular, tailwindcss, ant design",
       "link_git": "https://github.com/nnanh19",
@@ -13,6 +14,7 @@
     {
       "img": "https://th.bing.com/th/id/R.94ee5e77f6eab61bd97ed2a1155a7007?rik=Mb8ysf9bsfCZpg&pid=ImgRaw&r=0",
       "title": "Trang bán hàng 2 ",
+      "desc": "desc",
       "genre": "Application, E-commerce",
       "frameworks": "angular, tailwindcss, ant design",
       "link_git": "https://github.com/nnanh19",
@@ -24,6 +26,7 @@
       "img": "https://th.bing.com/th/id/R.94ee5e77f6eab61bd97ed2a1155a7007?rik=Mb8ysf9bsfCZpg&pid=ImgRaw&r=0",
       "title": "Trang bán hàng 3 ",
       "genre": "Application, E-commerce",
+      "desc": "desc",
       "frameworks": "angular, tailwindcss, ant design",
       "link_git": "https://github.com/nnanh19",
       "link_web": "https://github.com/nnanh19",
@@ -34,6 +37,7 @@
       "img": "https://th.bing.com/th/id/R.94ee5e77f6eab61bd97ed2a1155a7007?rik=Mb8ysf9bsfCZpg&pid=ImgRaw&r=0",
       "title": "Trang bán hàng 4 ",
       "genre": "Application, E-commerce",
+      "desc": "desc",
       "frameworks": "angular, tailwindcss, ant design",
       "link_git": "https://github.com/nnanh19",
       "link_web": "https://github.com/nnanh19",
@@ -41,25 +45,67 @@
       "id": 12
     },
     {
-      "img": "https://th.bing.com/th/id/R.94ee5e77f6eab61bd97ed2a1155a7007?rik=Mb8ysf9bsfCZpg&pid=ImgRaw&r=0",
-      "title": "Dự án new",
+      "title": "Dự án Like New",
       "genre": "API",
+      "desc": "desc",
       "frameworks": "React, redux-toolkit",
       "link_git": "https://github.com/nnanh19",
       "link_web": "https://github.com/nnanh19",
       "createdAt": "10-6-2022",
+      "img": "http://res.cloudinary.com/ph-th/image/upload/v1655144029/tdssjbql7aqhzqtb2bxh.jpg",
       "id": 123
     }
   ],
-  "work": [],
-  "comments": [
+  "work": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "feat": "Remove",
+      "desc": "Mô tả",
+      "img": [
+        {
+          "url": "http://res.cloudinary.com/ph-th/image/upload/v1655141558/sre5po42junw8ovq422v.png"
+        },
+        {
+          "url": "http://res.cloudinary.com/ph-th/image/upload/v1655141562/d1whhla3qruy67buabz0.png"
+        }
+      ],
+      "workId": 122,
+      "id": 1
+    },
+    {
+      "feat": "Remove",
+      "desc": "Remove, abcd",
+      "img": [
+        {
+          "url": "http://res.cloudinary.com/ph-th/image/upload/v1655144050/icvfsgqdvytdiirbmyil.jpg"
+        }
+      ],
+      "workId": 123,
+      "id": 2
+    },
+    {
+      "feat": "Remove",
+      "desc": "Remove, abcd",
+      "img": [
+        {
+          "url": "http://res.cloudinary.com/ph-th/image/upload/v1655144050/icvfsgqdvytdiirbmyil.jpg"
+        },
+        {
+          "url": "http://res.cloudinary.com/ph-th/image/upload/v1655144066/gactim4807gfpwyuqyec.jpg"
+        }
+      ],
+      "workId": 123,
+      "id": 3
+    },
+    {
+      "feat": "Update",
+      "desc": "desccccc",
+      "img": [
+        {
+          "url": "http://res.cloudinary.com/ph-th/image/upload/v1655146584/v4e8og9b8zztde1ofqsd.jpg"
+        }
+      ],
+      "workId": 122,
+      "id": 4
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

@@ -18,7 +18,8 @@
       <th>Link git</th>
       <th>Link web</th>
       <th>Created at</th>
-      <th colSpan="2">Function</th>
+      <th>Desc</th>
+      <th colSpan="2">Action</th>
     </tr>
   </thead>
   <tbody>
@@ -30,6 +31,7 @@
       <td>{{ data.link_git }}</td>
       <td>{{ data.link_web }}</td>
       <td>{{ data.createdAt }}</td>
+      <td>{{ data.desc }}</td>
       <td>
         <a
           nzType="primary"
@@ -58,7 +60,7 @@
         </a>
       </td>
       <td>
-        <a nz-button nzType="default" nzPrimary routerLink="/admin/work/detail"
+        <a nz-button nzType="default" nzPrimary routerLink="/admin/work/{{data.id}}/detail"
           >Chi tiết</a
         >
       </td>

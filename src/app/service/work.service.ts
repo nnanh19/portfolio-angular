@@ -33,4 +33,8 @@ export class WorkService {
   create(data:any):Observable<any>{
     return this.http.post("http://localhost:3000/works/",data)
   }
+
+  createDetail(data:any):Observable<any>{
+    return this.http.post("http://localhost:3000/work/",data)
+  }
 }

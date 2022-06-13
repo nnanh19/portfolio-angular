@@ -2,28 +2,37 @@
     <div class="tw-flex tw-flex-col tw-py-5">
         <div class="tw-flex tw-flex-col-reverse ">
             <div class="tw-py-5">
-                <a href=""><img class="tw-w-full tw-rounded-lg" src="https://th.bing.com/th/id/R.18a22bd05d7f65941eb710452bb843e2?rik=pZ8Vc16Vp0dDnw&riu=http%3a%2f%2fdanangsuntravel.com%2fdata%2ftour%2f500%2fmua-hoa-anh-dao-1577072105.jpg&ehk=ZVGRMY4evmS7G%2fUz9J5PyJ6cY9Nw3xkcbSy4lfCRQAg%3d&risl=&pid=ImgRaw&r=0" alt=""></a>
+                <a href=""><img class="tw-w-full tw-rounded-lg" src={{work.img}} alt=""></a>
             </div>
             <div class="tw-flex tw-flex-col gap-1  md:tw-gap-3">
-                <a href=""><h3 class="tw-font-bold text-xl md:tw-text-2xl md:tw-font-sans"> Real-time chat application </h3></a>
+                <a href=""><h3 class="tw-font-bold text-xl md:tw-text-2xl md:tw-font-sans"> {{work.title}} </h3></a>
                 <div class="tw-flex tw-flex-row tw-gap-5 tw-py-5">
-                    <span class="tw-bg-red-500 tw-rounded-full tw-px-3 md:tw-px-5 tw-text-white">2022</span>
-                    <span class="tw-text-gray-400">API</span>
+                    <span class="tw-bg-red-500 tw-rounded-full tw-px-3 md:tw-px-5 tw-text-white">{{work.createdAt}}</span>
+                    <span class="tw-text-gray-400">{{work.genre}}</span>
                 </div>
-                <p>Website created targeted for people to be able to message directly, Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci ad et, consequatur accusamus, dolorum doloremque recusandae cupiditate beatae eius expedita voluptas fugiat provident laudantium quisquam facere nisi fuga dolorem?</p>
+                <p>{{work.desc}}</p>
             </div>
         </div>
     </div>
     <div>
         <h1 class="tw-font-semibold tw-text-2xl tw-py-5">
-            Trang sản phẩm
+            Chức năng
         </h1>
-        <div>
-            <h2 class="tw-font-semibold tw-text-xl">Chức năng</h2>
-            <p class="tw-py-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ducimus blanditiis nisi expedita sint corporis rerum similique aperiam aliquam laudantium! Aliquam, ratione culpa in vero vel pariatur voluptates necessitatibus quas.</p>
-            <img class="tw-w-full tw-pb-5" src="https://th.bing.com/th/id/R.18a22bd05d7f65941eb710452bb843e2?rik=pZ8Vc16Vp0dDnw&riu=http%3a%2f%2fdanangsuntravel.com%2fdata%2ftour%2f500%2fmua-hoa-anh-dao-1577072105.jpg&ehk=ZVGRMY4evmS7G%2fUz9J5PyJ6cY9Nw3xkcbSy4lfCRQAg%3d&risl=&pid=ImgRaw&r=0" alt="">
-            <img class="tw-w-full" src="https://th.bing.com/th/id/R.18a22bd05d7f65941eb710452bb843e2?rik=pZ8Vc16Vp0dDnw&riu=http%3a%2f%2fdanangsuntravel.com%2fdata%2ftour%2f500%2fmua-hoa-anh-dao-1577072105.jpg&ehk=ZVGRMY4evmS7G%2fUz9J5PyJ6cY9Nw3xkcbSy4lfCRQAg%3d&risl=&pid=ImgRaw&r=0" alt="">
-
+        <div  *ngFor="let feat of feats">
+            <div>
+                <h2 class="tw-font-semibold tw-text-xl">{{feat.feat}}</h2>
+                <p class="tw-py-5">{{feat.desc}}</p>
+                <div class="tw-flex tw-flex-col md:tw-flex-row tw-py-5" >
+                    <div *ngFor="let img of feat.img">
+                        <img
+                        nz-image
+                        class="tw-w-64  "
+                        nzSrc="{{img.url}}"
+                        alt=""
+                        />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

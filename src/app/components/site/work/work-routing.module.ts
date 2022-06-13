@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { Routes } from "@angular/router";
 import { RouterModule } from "@angular/router";
 import { WorkListComponent } from "./list/work-list.component";
-import { WorkDetailComponent } from "./work-detail/work-detail.component";
+import { SiteWorkDetailComponent } from "./work-detail/work-detail.component";
 
 const routes : Routes = [
     {
@@ -11,7 +11,7 @@ const routes : Routes = [
     },
     {
         path : ':id',
-        component: WorkDetailComponent
+        component: SiteWorkDetailComponent
     }
 ]
 

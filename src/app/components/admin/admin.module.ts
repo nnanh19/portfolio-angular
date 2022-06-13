@@ -10,7 +10,7 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 
 @NgModule({
   declarations: [
-    AdminComponent
+    AdminComponent,
   ],
   imports: [
     CommonModule,
