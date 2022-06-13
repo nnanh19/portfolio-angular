@@ -1,0 +1,81 @@
+<div class="tw-text-left ">
+    <div class="tw-text-blue-500">
+        <button (click)="hideAddWork()" *ngIf="hideFeatAddWork">Thêm chức năng << </button>
+        <button (click)="hideAddWork()" *ngIf="!hideFeatAddWork">Thêm chức năng >>  </button>
+    </div>
+        <div class="flex flex-col items-start"  *ngIf="hideFeatAddWork">
+            <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+                <nz-form-item>
+                    <nz-form-label [nzSpan]="5" nzRequired nzFor="feat">Tên chức năng</nz-form-label>
+                    <nz-form-control [nzSpan]="12" nzErrorTip="Nhập tên chức năng!">
+                    <input id="feat" type="text" nz-input formControlName="feat" />
+                    </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                    <nz-form-label [nzSpan]="5" nzRequired nzFor="img">Ảnh</nz-form-label>
+                    <nz-upload
+                    nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+                    [nzHeaders]="{ authorization: 'authorization-text' }"
+                    (nzChange)="handleChange($event)"
+                    >
+                    <a nz-button>
+                        <i nz-icon nzType="upload"></i>
+                        Click to Upload
+                    </a>
+                    </nz-upload>
+                </nz-form-item>
+               
+                <nz-form-item>
+                    <nz-form-label [nzSpan]="5" nzRequired nzFor="desc">Mô tả</nz-form-label>
+                    <nz-form-control [nzSpan]="12" nzErrorTip="Nhập mô tả!">
+                    <textarea id="desc" type="text" nz-input formControlName="desc"></textarea>
+                    </nz-form-control>
+                </nz-form-item>
+               
+              <nz-form-item>
+                <nz-form-control [nzSpan]="12" [nzOffset]="5">
+                  <button nz-button nzType="primary">Submit</button>
+                </nz-form-control>
+              </nz-form-item>
+            </form>
+        </div>
+    </div>
+<hr class="tw-my-5">
+<div>
+    <nz-table #basicTable [nzData]="listwork">
+        <thead>
+          <tr>
+            <th>Feat</th>
+            <th>Image</th>
+            <th>Desc</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of basicTable.data">
+            <td>{{data.feat}}</td>
+            <td class="tw-flex tw-flex-row">
+                <div *ngFor="let img of data.img">
+                    <img src={{img.url}} width="50" alt="">
+                </div>
+            </td>
+            <td>{{data.desc}}</td>
+            <td>
+                <a
+                  nz-button
+                  nzType="primary"
+                  nzDanger
+                  nz-popconfirm
+                  nzPopconfirmTitle="Bán chắn chắc xóa?"
+                  (nzOnConfirm)="onDelete(data.id)"
+                  (nzOnCancel)="cancel()"
+                  nzPopconfirmPlacement="leftTop"
+                  nzOkText="Đồng ý"
+                  nzCancelText="Hủy"
+                >
+                  Xóa
+                </a>
+              </td>
+        </tbody>
+      </nz-table>
+</div>

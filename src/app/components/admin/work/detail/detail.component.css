@@ -8,5 +8,5 @@ input, textarea{
 a.ant-btn.ng-star-inserted{
     min-width: 590px;
     border: 1px solid black !important;
-    margin-left: 18px !important;
+    margin-left: 0px !important;
 }

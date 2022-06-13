@@ -14,7 +14,7 @@ const routes : Routes = [
             },
             {
                 path: 'work',
-                loadChildren: () => import('./work/work.module').then( m => m.WorkModule)
+                loadChildren: () => import('./work/work-site.module').then( m => m.WorkSiteModule)
             },
             {
                 path: 'blog',

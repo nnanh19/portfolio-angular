@@ -14,14 +14,27 @@
         </nz-form-item>
         <nz-form-item>
             <nz-form-label [nzSpan]="5" nzRequired nzFor="img">Ảnh</nz-form-label>
-            <nz-form-control [nzSpan]="12" nzErrorTip="Nhập ảnh dự án!">
-            <input id="img" type="text" nz-input formControlName="img" />
-            </nz-form-control>
+            <nz-upload
+            nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+            [nzHeaders]="{ authorization: 'authorization-text' }"
+            (nzChange)="handleChange($event)"
+            >
+            <a nz-button>
+                <i nz-icon nzType="upload"></i>
+                Click to Upload
+            </a>
+            </nz-upload>
         </nz-form-item>
         <nz-form-item>
             <nz-form-label [nzSpan]="5" nzRequired nzFor="genre">Thể loại</nz-form-label>
             <nz-form-control [nzSpan]="12" nzErrorTip="Nhập thể loại!">
-            <textarea id="genre" type="text" nz-input formControlName="genre"></textarea>
+            <input id="genre" type="text" nz-input formControlName="genre">
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSpan]="5" nzRequired nzFor="desc">Mô tả</nz-form-label>
+            <nz-form-control [nzSpan]="12" nzErrorTip="Nhập mô tả!">
+            <textarea id="desc" type="text" nz-input formControlName="desc"></textarea>
             </nz-form-control>
         </nz-form-item>
         <nz-form-item>
@@ -48,6 +61,7 @@
             <input id="createdAt" type="text" nz-input formControlName="createdAt" />
             </nz-form-control>
         </nz-form-item>
+        
       <nz-form-item>
         <nz-form-control [nzSpan]="12" [nzOffset]="5">
           <button nz-button nzType="primary">Submit</button>

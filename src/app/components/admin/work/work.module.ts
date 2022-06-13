@@ -12,12 +12,14 @@ import { AdminWorkListComponent } from './list/work-list.component';
 import { AdminWorkUpdateComponent } from './update/update.component';
 import { NzNotificationModule } from 'ng-zorro-antd/notification';
 import { NewComponent } from './new/new.component';
-
+import { NzUploadModule } from 'ng-zorro-antd/upload';
+import { DetailComponent } from './detail/detail.component';
 @NgModule({
   declarations: [
     AdminWorkListComponent,
     AdminWorkUpdateComponent,
-    NewComponent  
+    NewComponent,
+    DetailComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +32,8 @@ import { NewComponent } from './new/new.component';
     NzButtonModule,
     NzFormModule,
     ReactiveFormsModule,
-    NzNotificationModule
+    NzNotificationModule,
+    NzUploadModule
   ]
 })
 export class WorkModule { }
